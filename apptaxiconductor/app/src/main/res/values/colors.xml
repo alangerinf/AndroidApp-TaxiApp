@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blanco">#ffffff</color>
+    <color name="celeste">#4A81BA</color>
+    <color name="azul">#0A5492</color>
+    <color name="azul_oscuro">#0f1a57</color>
+    <color name="rojo">#FF0000</color>
+    <color name="negro">#000000</color>
+    <color name="gris">#333333</color>
+    <color name="gris_claro">#666666</color>
+    <color name="verde">#009933</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="gold_heavy">#a47c05</color>
+    <color name="gold_ligth">#fceca6</color>
+
+
+
+
+    <color name="primary">#0A5492</color>
+    <color name="primary_dark">#0f1a57</color>
+    <color name="primary_light">#dde6f7</color>
+    <color name="accent">#05719b</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#C5CAE9</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#000000</color>
+    <color name="divider_light">#333333</color>
+</resources>

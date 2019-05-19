@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_inicio"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="INICIAR SESIÓN"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/shape_primary_border_5"
+            android:layout_marginRight="2dp"
+            android:id="@+id/btn_iniciar"
+            android:textColor="@color/primary_text"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="REGÍSTRATE"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_secondary_border_10"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/btn_registrarse"
+            android:textColor="@color/primary"
+            />
+
+    </LinearLayout>
+<!--
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/slog" />
+-->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_inicio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="ELIJE UNA OPCION"
+        android:textColor="@color/primary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

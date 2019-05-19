@@ -1,0 +1,154 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/datos"
+        android:background="@color/divider"
+        android:padding="7dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_cliente" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1400dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/divider_light"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_foto_conductor"
+                android:layout_width="115dp"
+                android:layout_height="130dp"
+                android:background="@drawable/fotocheck"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alfonso Huaman"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp"
+                    android:id="@+id/txt_conductor"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marca"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="18sp"
+                    android:id="@+id/txt_marca"
+                    android:layout_below="@+id/txt_conductor"
+                    android:layout_marginTop="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_placa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_marca"
+                    android:layout_marginTop="2dp"
+                    android:text="Placa"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_modelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_placa"
+                    android:layout_marginTop="2dp"
+                    android:text="Modelo"
+
+                    android:textColor="@color/secondary_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_modelo"
+                    android:layout_marginTop="2dp"
+                    android:text="COLOR"
+
+                    android:textColor="@color/secondary_text"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        >
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sombra_inclinado"
+            android:layout_marginTop="-4dp"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cancelar_pedir"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/btn_cancelar"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_light"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/divider"
+            android:id="@+id/linearLayout1"
+            android:padding="13dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_taxi_header"
+                android:id="@+id/img_logo"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativelayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginBottom="70dp"
+            >
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.apptaxi.conductordemo.MapsActivity"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sombra_inclinado"
+                android:layout_marginTop="-4dp"
+                />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/opcion_transporte"
+                android:id="@+id/btn_sms"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ruta"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_ruta"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:id="@+id/txt_distancia"
+                android:text="0 km"
+                android:background="@color/divider_light"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_primary_sinborder"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/relative_direccion"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llyt_direccion"
+                    android:layout_marginBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="DIRECCIÓN:"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Direccion:"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14dp"
+                        android:id="@+id/txt_direccion"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llyt_cliente"
+                    android:layout_marginBottom="3dp"
+                    android:layout_below="@id/llyt_direccion"
+                    >
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="CLIENTE:"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cliente:"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14dp"
+                        android:id="@+id/txt_cliente"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llyt_referencia"
+                    android:layout_below="@id/llyt_cliente"
+                    android:layout_marginBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="REFERENCIA:"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Referencia:"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14dp"
+                        android:id="@+id/txt_referencia"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llyt_destino"
+                    android:layout_below="@+id/llyt_referencia"
+                    >
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="DESTINO:"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Destino"
+                        android:textColor="@color/primary_text"
+                        android:textSize="14dp"
+                        android:id="@+id/txt_destino"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S. DIRECTO"
+            android:textColor="@color/primary_text"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

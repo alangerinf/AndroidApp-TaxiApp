@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_light"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="10dp"
+        android:background="@color/primary_dark"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="INDICAR MOTIVO"
+            android:textColor="@color/primary_text"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linearLayout1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Está cobrando mayor a la tarifa, indicar el motivo:"
+            android:textSize="16dp"
+            android:textColor="@color/primary_text"
+            android:id="@+id/txt_motivo"
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rg_opciones"
+            >
+
+            <RadioButton android:id="@+id/radio_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El servicio es por hora"
+                android:textSize="14dp"
+                android:textColor="@color/primary_text"
+                android:buttonTint="@color/accent"
+                android:layout_marginTop="20dp"
+                />
+
+            <RadioButton android:id="@+id/radio_varios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se hizo una o más paradas"
+                android:textSize="14dp"
+                android:textColor="@color/primary_text"
+                android:buttonTint="@color/accent"
+                />
+
+            <RadioButton android:id="@+id/radio_otro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro motivo"
+                android:textSize="14dp"
+                android:textColor="@color/primary_text"
+                android:buttonTint="@color/accent"
+                />
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_otro"
+            android:layout_below="@+id/rg_opciones"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/secondary_text"
+
+            android:backgroundTint="@color/primary_text"
+            android:hint="Ingrese el motivo"
+            android:textSize="14dp"
+            android:visibility="visible"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_enviar"
+        android:text="ENVIAR Y FINALIZAR"
+        android:textColor="@color/primary"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/shape_secondary_border_10"
+        android:textSize="14dp"
+        android:layout_below="@+id/relativelayout1"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>

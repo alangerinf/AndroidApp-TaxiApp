@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider_light"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.- Asunto"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"
+                android:textSize="14dp"
+                android:id="@+id/txt_asunto"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Nuevo)"
+                android:layout_marginLeft="15dp"
+                android:textSize="14dp"
+                android:textColor="@color/accent"
+                android:id="@+id/txt_nuevo"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txt_mensaje"
+            android:layout_below="@+id/linearLayout1"
+            android:text="Este es el mensaje"
+            android:textColor="@color/secondary_text"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txt_id"
+            android:layout_below="@+id/linearLayout1"
+            android:text="id"
+            android:textColor="@color/secondary_text"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

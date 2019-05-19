@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.apptaxi.conductordemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDWcWMkt18v2b-_ctjztPPUDNo0n93Y8Zw" />
+
+        <activity
+            android:name=".iniciar"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="Actividad Principal"
+            />
+
+        <activity
+            android:name=".login"
+            android:label="Inicio de sesion"
+            />
+
+        <activity
+            android:name=".fuera_servicio"
+            android:label="Fuera de servicio"
+            />
+
+        <activity
+            android:name=".servicio_app"
+            android:label="Servicio APP"
+            />
+
+        <activity
+            android:name=".servicio_app_aceptado"
+            android:label="Servicio APP aceptado"
+            />
+
+        <activity
+            android:name=".servicio_app_transportando"
+            android:label="Servicio APP Transportando"
+            />
+
+        <activity
+            android:name=".servicio_app_finalizar"
+            android:label="Servicio APP Finalizar"
+            />
+
+        <activity
+            android:name=".servicio_app_anulado"
+            android:label="Servicio APP Anulado"
+            />
+
+        <activity
+            android:name=".servicio_llamada"
+            android:label="Servicio Llamada"
+            />
+
+        <activity
+            android:name=".servicio_llamada_nuevo_dire"
+            android:label="Servicio Llamada nueva direccion"
+            />
+
+        <activity
+            android:name=".servicio_llamada_aceptado"
+            android:label="Servicio llamada aceptado"
+            />
+
+        <activity
+            android:name=".servicio_llamada_transportando"
+            android:label="Servicio llamada Transportando"
+            />
+
+        <activity
+            android:name=".servicio_llamada_finalizar"
+            android:label="Servicio llamada Finalizar"
+            />
+
+        <activity
+            android:name=".servicio_llamada_anulado"
+            android:label="Servicio llamada Anulado"
+            />
+
+        <activity
+            android:name=".servicio_amb_transportando"
+            android:label="Servicio ambulatorio transportando"
+            />
+
+        <activity
+            android:name=".servicio_amb_finalizar"
+            android:label="Servicio ambulatorio finalizar"
+            />
+
+        <activity
+            android:name=".mis_servicios"
+            android:label="Mis servicios"
+            />
+
+        <activity
+            android:name=".cambiar_contrasenia"
+            android:label="Cambiar contrasenia"
+            />
+
+        <activity
+            android:name=".tarifario"
+            android:label="Tarifario"
+            />
+
+        <activity
+            android:name=".tarifario_turistico"
+            android:label="Tarifario Turistico"
+            />
+
+        <activity
+            android:name=".tarifario_aeropuerto"
+            android:label="Tarifario Aeropuerto"
+            />
+
+        <activity
+            android:name=".tarifario_urbano"
+            android:label="Tarifario Urbano"
+            />
+
+        <activity
+            android:name=".tarifario_urbano_precio"
+            android:label="Tarifario Urbano Precio"
+            />
+
+        <activity
+            android:name=".mensajes"
+            android:label="Mensajes conductor"
+            />
+
+        <activity
+            android:name=".mensajes_leer"
+            android:label="Mensajes conductor leer"
+            />
+        <service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".servicioDisponible"
+            >
+            <intent-filter>
+                <action android:name=".servicioDisponible" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

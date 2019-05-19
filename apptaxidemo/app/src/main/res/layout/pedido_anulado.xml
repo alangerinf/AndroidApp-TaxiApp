@@ -1,0 +1,85 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/divider"
+            android:id="@+id/linearLayout1"
+            android:padding="9dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_cliente"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_logo"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginTop="30dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:padding="30dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="El taxista por algún motivo a cancelado el servicio, es posible que no ubicó la dirección."
+                    android:id="@+id/lbl_mensaje"
+                    android:textColor="@color/divider"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_aceptar"
+                    android:text="ACEPTAR"
+                    android:textColor="@color/primary_text"
+                    android:layout_below="@+id/lbl_mensaje"
+                    android:layout_marginTop="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/shape_rojo_border_5"
+                    android:textSize="12dp"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/cancelar_pedir"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

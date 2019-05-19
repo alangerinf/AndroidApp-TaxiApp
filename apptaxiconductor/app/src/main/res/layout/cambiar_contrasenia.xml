@@ -1,0 +1,137 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    app:statusBarBackground="@color/primary"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/divider"
+            android:id="@+id/linearLayout1"
+            android:padding="5dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_taxi_header"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_logo"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginTop="30dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:padding="30dp"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_pass_actual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Su contraseña actual"
+                        android:textColor="@color/primary_dark"
+                        android:text=""
+                        android:backgroundTint="@color/primary_dark"
+                        android:textSize="16dp"
+                        android:id="@+id/txt_pass_actual"
+                        android:inputType="textPassword"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_nuevo_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    android:layout_below="@+id/input_pass_actual"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Su nueva contraseña"
+                        android:textColor="@color/primary_dark"
+                        android:text=""
+                        android:backgroundTint="@color/primary_dark"
+                        android:textSize="16dp"
+                        android:id="@+id/txt_nuevo_pass"
+                        android:inputType="textPassword"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_repite_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/primary"
+                    android:layout_below="@+id/input_nuevo_pass"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Repite su contraseña"
+                        android:textColor="@color/primary_dark"
+                        android:text=""
+                        android:backgroundTint="@color/primary_dark"
+                        android:textSize="16dp"
+                        android:id="@+id/txt_repite_pass"
+                        android:inputType="textPassword"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_guardar"
+                    android:text="Enviar datos"
+                    android:textColor="@color/blanco"
+                    android:layout_below="@+id/input_repite_pass"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/shape_primary_border_5"
+                    android:textSize="12dp"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/contrasenia"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

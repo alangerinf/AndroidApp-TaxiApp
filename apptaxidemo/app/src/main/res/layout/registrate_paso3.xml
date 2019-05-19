@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/logo_cliente"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo_transparente"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/divider"
+        android:id="@+id/relativeLayout1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FINALIZAR TU REGISTRO"
+            android:layout_centerVertical="true"
+            android:textColor="@color/primary_text"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_secondary_border_10"
+            android:textColor="@color/primary_dark"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:hint=""
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txt_nombre"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_secondary_border_10"
+            android:textColor="@color/primary_dark"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:hint=""
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txt_celular"
+            android:layout_below="@+id/txt_nombre"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_correo"
+        android:layout_below="@+id/txt_celular"
+        android:text="*Ingresa tu correo electronico"
+        android:textColor="@color/primary_text"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_secondary_border_10"
+            android:textColor="@color/primary_dark"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:hint=""
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txt_correo"
+            android:layout_below="@+id/lbl_correo"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_pass"
+            android:layout_below="@+id/txt_correo"
+            android:text="*Crear una contraseña para el aplicativo"
+            android:textColor="@color/primary_text"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_secondary_border_10"
+            android:textColor="@color/primary_dark"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:hint=""
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txt_pass"
+            android:layout_below="@+id/lbl_pass"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_repite"
+            android:layout_below="@+id/txt_pass"
+            android:text="*Repite la contraseña"
+            android:textColor="@color/primary_text"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_secondary_border_10"
+            android:textColor="@color/azul_oscuro"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:hint=""
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/txt_repite"
+            android:layout_below="@+id/lbl_repite"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gris"
+        >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="ENVIAR Y FINALIZAR"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_primary_border_5"
+            android:id="@+id/btn_continuar"
+            android:textColor="@color/primary_text"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

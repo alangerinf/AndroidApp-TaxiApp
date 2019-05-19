@@ -1,0 +1,138 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/divider"
+            android:id="@+id/linearLayout1"
+            android:padding="9dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_cliente"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_logo"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/primary_text"
+                android:text="TARIFARIO AEROPUERTO"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:id="@+id/txt_usuario"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout2"
+            android:layout_marginTop="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:padding="20dp"
+                >
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_origen"
+                    android:backgroundTint="@color/primary"
+                    android:hint="Urbanización de origen"
+                    android:textColorHint="@color/primary"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="14dp"
+                    android:ems="10"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_destino"
+                    android:layout_below="@+id/txt_origen"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/primary"
+                    android:hint="Aeropuerto"
+                    android:textColorHint="@color/primary"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="14dp"
+                    android:ems="10"
+                    android:editable="false"
+                    />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_destino"
+                    android:text="PRECIO: S/. 0.00"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/txt_precio"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRECIO REFERENCIAL"
+                    android:layout_below="@+id/txt_precio"
+                    android:textColor="@color/accent"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txt_precio_referencial"
+                    android:textSize="12dp"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/soles"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

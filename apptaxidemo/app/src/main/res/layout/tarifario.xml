@@ -1,0 +1,118 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/divider"
+            android:id="@+id/linearLayout1"
+            android:padding="9dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_cliente"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_logo"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/primary_text"
+                android:text="ELIJE UNA OPCIÓN:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:id="@+id/txt_usuario"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout2"
+            android:layout_marginTop="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:padding="20dp"
+                >
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_urbano"
+                    android:text="TARIFARIO URBANO"
+                    android:textColor="@color/accent"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_secondary_border_10"
+                    android:textSize="12dp"
+                    />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_aeropuerto"
+                    android:text="TARIFARIO AEROPUERTO"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_primary_border_5"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/btn_urbano"
+                    />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_turistico"
+                    android:text="TARIFARIO TURÍSTICO"
+                    android:textColor="@color/secondary_text"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_primary_dark_b5_r5"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/btn_aeropuerto"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/soles"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/divider"
+            android:id="@+id/linearLayout1"
+            android:padding="9dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_cliente"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_logo"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_marginTop="30dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:padding="30dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/gris"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relativeLayout1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        >
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/img_foto_conductor"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/fotocheck"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alan Gerónimo"
+                                android:textColor="@color/primary_text"
+                                android:textSize="12dp"
+                                android:id="@+id/txt_conductor"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Toyota - T1A-0258"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12dp"
+                                android:id="@+id/txt_marca"
+                                android:layout_below="@+id/txt_conductor"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Auto Azul"
+                                android:textColor="@color/secondary_text"
+                                android:textSize="12dp"
+                                android:id="@+id/txt_placa"
+                                android:layout_below="@+id/txt_marca"
+                                android:layout_marginTop="10dp"
+                                />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DemoTaxi se encuentra en su ubicación, por favor sírvase a abordar el taxi, ¡Gracias por su preferencia!"
+                    android:id="@+id/lbl_mensaje"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/relativeLayout1"
+                    />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_abordar"
+                    android:text="ABORDAR TAXI"
+                    android:textColor="@color/blanco"
+                    android:layout_below="@+id/lbl_mensaje"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/shape_primary_border_5"
+                    android:textSize="12dp"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/servicio_ubicacion"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

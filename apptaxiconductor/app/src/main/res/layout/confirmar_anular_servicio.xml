@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/llyt_texto"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimado conductor, esta opción anula el servicio del cliente \n¿Confirma que desea anular?"
+            android:textColor="@color/primary_text"
+            android:textSize="16dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/llyt_buton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/llyt_texto"
+        android:layout_marginBottom="25dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_primary_border_5"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="REGRESAR"
+            android:textColor="@color/primary_text"
+            android:textSize="16dp"
+            android:id="@+id/btn_regresar"
+            android:layout_marginRight="3dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_secondary_border_10"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="ANULAR"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:id="@+id/btn_anular"
+            android:layout_marginLeft="3dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

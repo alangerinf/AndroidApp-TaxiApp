@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.apptaxi.clientedemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,RtlEnabled,UnusedAttribute">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDWcWMkt18v2b-_ctjztPPUDNo0n93Y8Zw" />
+
+        <activity
+            android:name=".iniciar"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="Actividad Principal"
+            />
+
+        <activity
+            android:name=".opcion_inicio"
+            android:label="Opcion inicio"
+            />
+
+        <activity
+            android:name=".login"
+            android:label="Inicio sesion"
+            />
+
+        <activity
+            android:name=".personalizar_pedido"
+            android:label="Personalizar pedido"
+            />
+
+        <activity
+            android:name=".pedido_aceptado"
+            android:label="Pedido aceptado"
+            />
+
+        <activity
+            android:name=".pedido_ubicacion"
+            android:label="Pedido ubicacion"
+            />
+
+        <activity
+            android:name=".pedido_anulado"
+            android:label="Pedido anulado"
+            />
+
+        <activity
+            android:name=".pedido_evaluar"
+            android:label="Pedido evaluar"
+            />
+
+        <activity
+            android:name=".tarifario"
+            android:label="Tarifario"
+            />
+
+        <activity
+            android:name=".tarifario_turistico"
+            android:label="Tarifario Turistico"
+            />
+
+        <activity
+            android:name=".tarifario_aeropuerto"
+            android:label="Tarifario Aeropuerto"
+            />
+
+        <activity
+            android:name=".tarifario_urbano"
+            android:label="Tarifario Urbano"
+            />
+
+        <activity
+            android:name=".tarifario_urbano_precio"
+            android:label="Tarifario Urbano Precio"
+            />
+
+        <activity
+            android:name=".cambiar_contrasenia"
+            android:label="Cambiar contrasenia"
+            />
+
+        <activity
+            android:name=".promociones"
+            android:label="Promociones"
+            />
+
+        <activity
+            android:name=".mis_servicios"
+            android:label="Mis servicios"
+            />
+
+        <activity
+            android:name=".mis_servicios_ruta"
+            android:label="Mis servicios ruta"
+            />
+
+        <activity
+            android:name=".mis_direcciones"
+            android:label="Mis direcciones"
+            />
+
+        <activity
+            android:name=".mis_direcciones_editar"
+            android:label="Mis direcciones editar"
+            />
+
+        <activity
+            android:name=".registrate_paso1"
+            android:label="Registro paso 1"
+            />
+
+        <activity
+            android:name=".registrate_paso2"
+            android:label="Registro paso 2"
+            />
+
+        <activity
+            android:name=".registrate_paso3"
+            android:label="Registro paso 3"
+            />
+
+        <activity
+            android:name=".recuperar_pass"
+            android:label="Recuperar contraseña"
+            />
+
+        <activity
+            android:name=".actualizar_telefono"
+            android:label="Actualiozar telefono"
+            />
+
+        <service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".servicioPedido">
+            <intent-filter>
+                <action android:name=".servicioPedido" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

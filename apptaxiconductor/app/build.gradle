@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId 'com.alanger.apptaxi.conductordemo'
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0 Origin"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleDynamicVersion,GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28+'
+    //noinspection GradleDynamicVersion
+    implementation 'com.android.support:design:28+'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:16.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

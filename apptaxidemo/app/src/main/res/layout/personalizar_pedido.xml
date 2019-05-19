@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1"
+            android:layout_marginTop="7dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_cliente" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout6">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/logo_cliente"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondo_transparente"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="0dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:id="@+id/relativeLayout2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_direccion"
+                android:textSize="12dp"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Jiron grau"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primary_dark"
+                android:layout_marginRight="70dp"
+                />
+
+            <EditText
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_numero"
+                android:textSize="12dp"
+                android:background="@drawable/shape_secondary_border_10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="120"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/primary_dark"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:id="@+id/relativeLayout3"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_referencia"
+                android:textSize="12dp"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:hint="Urbanización / Referencia"
+                android:textColorHint="@color/primary"
+                android:textColor="@color/primary_dark"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:id="@+id/relativeLayout4"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selecciona tipo de carro (Opcional)"
+                android:id="@+id/lbl_tipo_carro"
+                android:textSize="16dp"
+                android:textColor="@color/primary_text"
+                />
+            <Spinner
+                android:id="@+id/slc_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/tipo_unidad"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/lbl_tipo_carro"
+                android:background="@drawable/shape_secondary_border_10"
+                android:spinnerMode="dropdown"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/flecha_spinner"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lbl_tipo_carro"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/slc_tipo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:text="Número de Unidades:"
+                android:textColor="@color/primary_text"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/etNumUnidades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_marginEnd="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_toLeftOf="@+id/imageView4"
+                android:layout_toStartOf="@+id/imageView4"
+                android:background="@drawable/shape_secondary_border_10"
+                android:ems="2"
+                android:inputType="number"
+                android:maxEms="2"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/primary_dark"
+                android:textColorHint="@color/primary"
+                android:textColorLink="@color/primary"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout4"
+            android:id="@+id/relativeLayout5"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar dirección en favoritos"
+                android:backgroundTint="@color/primary_dark"
+                android:id="@+id/chk_guardar"
+                android:textColor="@color/secondary_text"
+                android:buttonTint="@color/primary_text"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_confirmar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout5"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/estrella_on"
+                android:padding="30sp"
+                android:id="@+id/img_carro"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR"
+            android:background="@drawable/shape_primary_sinborder"
+            android:textSize="14dp"
+            android:textColor="@color/primary_text"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_confirmar"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

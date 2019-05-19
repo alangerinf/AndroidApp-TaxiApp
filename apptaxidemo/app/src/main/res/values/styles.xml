@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.ProgressBar" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/primary_light</item>
+    </style>
+    <style name="RatingBar"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/rojo</item>
+        <item name="colorControlActivated">#ffcf3f</item>
+    </style>
+</resources>

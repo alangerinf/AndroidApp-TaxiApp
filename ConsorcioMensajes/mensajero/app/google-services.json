@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "193657320040",
+    "firebase_url": "https://apptaxidemo-75678.firebaseio.com",
+    "project_id": "apptaxidemo-75678",
+    "storage_bucket": "apptaxidemo-75678.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193657320040:android:8113756fd0164bc4",
+        "android_client_info": {
+          "package_name": "com.alanger.apptaxi.clientedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193657320040-od3jtabkdnd0immbbik5073e7bqregba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPuPj_ki7ucAc8KotOyRLXAKYVWZQ2c6Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193657320040:android:d3770e27df226932",
+        "android_client_info": {
+          "package_name": "com.alanger.apptaxi.conductordemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193657320040-od3jtabkdnd0immbbik5073e7bqregba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPuPj_ki7ucAc8KotOyRLXAKYVWZQ2c6Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193657320040:android:a784a88acec02019",
+        "android_client_info": {
+          "package_name": "com.alanger.apptaxi.smsdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193657320040-od3jtabkdnd0immbbik5073e7bqregba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPuPj_ki7ucAc8KotOyRLXAKYVWZQ2c6Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

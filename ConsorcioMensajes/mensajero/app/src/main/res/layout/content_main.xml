@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.apptaxi.smsDemo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/txtCityCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Codigo de Ciudad"
+                />
+
+            <EditText
+                android:id="@+id/eTxtCityCode"
+                android:layout_width="274dp"
+                android:layout_height="40dp"
+                android:ems="3"
+                android:inputType="number" />
+
+
+
+        </LinearLayout>
+
+        -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de Teléfono"/>
+
+            <EditText
+                android:id="@+id/eTxtPhone"
+                android:layout_width="279dp"
+                android:layout_height="47dp"
+                android:ems="9"
+                android:inputType="number"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/txtMenssage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensaje"
+                />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/eTxtMenssage"
+                android:layout_width="284dp"
+                android:layout_height="105dp"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:background="@color/colorPrimaryDark"
+                android:hint="Escriba  aqui su mensaje"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

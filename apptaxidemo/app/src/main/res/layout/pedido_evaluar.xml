@@ -1,0 +1,224 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/divider"
+            android:id="@+id/linearLayout1"
+            android:padding="9dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_cliente"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_logo"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primary_text"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/lbl_titulo"
+            android:textAlignment="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_titulo"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_primary_light_border_10"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:paddingTop="30dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:paddingBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="El servicio a finalizado, por favor díganos como evalua servicio recibido"
+                    android:id="@+id/lbl_mensaje"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativeLayout1"
+                    android:layout_below="@+id/lbl_mensaje"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Estrellas:\n1=Muy malo - 5=Muy bueno"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:id="@+id/lbl_nota"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lbl_nota"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:id="@+id/lnly_estrella"
+                        >
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/estrella_off"
+                            android:scaleType="fitXY"
+                            android:background="@color/light_bluish_white"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/img_op_1"
+                            />
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/estrella_off"
+                            android:scaleType="fitXY"
+                            android:background="@color/light_bluish_white"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/img_op_2"
+                            />
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/estrella_off"
+                            android:scaleType="fitXY"
+                            android:background="@color/light_bluish_white"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/img_op_3"
+                            />
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/estrella_off"
+                            android:scaleType="fitXY"
+                            android:background="@color/light_bluish_white"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/img_op_4"
+                            />
+
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/estrella_off"
+                            android:scaleType="fitXY"
+                            android:background="@color/light_bluish_white"
+                            android:gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/img_op_5"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Déjanos un comentario"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_dark"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:id="@+id/lbl_comentario"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/lnly_estrella"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lbl_comentario"
+                        android:textColor="@color/primary_dark"
+                        android:padding="10dp"
+                        android:id="@+id/txt_comentario"
+                        android:backgroundTint="@color/primary"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="12dp"
+                        android:inputType="textPersonName"
+                        />
+                </RelativeLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_enviar"
+                    android:text="ENVIAR EVALUACIÓN"
+                    android:textColor="@color/blanco"
+                    android:layout_below="@+id/relativeLayout1"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/shape_primary_border_5"
+                    android:textSize="12dp"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/evaluar_conductor"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
